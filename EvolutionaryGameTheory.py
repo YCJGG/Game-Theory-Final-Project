@@ -67,10 +67,10 @@ if __name__ == "__main__":
 
     people_matrix = init_people_matrix(N)
     plt.imshow(people_matrix, cmap = plt.cm.gray, vmin=0, vmax=1)
-    filename = str(parameters_1) + '_' +str(0)
-    plt.savefig('./img/%s.jpg' % filename)
-    for i in range(10):
-        people_matrix = PrisonerDilemma(N,parameters_1,people_matrix)
+    filename = str(parameters_2) + '_' +str(0)
+    plt.savefig('./img/%s.png' % filename)
+    for i in range(20):
+        people_matrix = PrisonerDilemma(N,parameters_2,people_matrix)
         plt.imshow(people_matrix,cmap=plt.cm.gray, vmin=0, vmax=1)
-        filename = str(parameters_1) + '_' +str(i+1)
-        plt.savefig('./img/%s.jpg' % filename)
+        filename = str(parameters_2) + '_' +str(i+1)
+        plt.savefig('./img/%s.png' % filename)
